@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Khaana | Management Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#FAF3E0;
+      --terracotta:#A34A28;
+      --turquoise:#2A9D8F;
+      --coffee:#3E2723;
+      --gold:#C08A28;
+    }
+    html,body{margin:0;padding:0;background:linear-gradient(180deg, #fdf8ec 0%, #f8f1df 100%);}
+    body{font-family: Montserrat, Arial, sans-serif;color:var(--coffee);line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px}
+    header{
+      background:var(--terracotta);
+      color:white;
+      padding:26px 20px;
+      border-radius:18px;
+      box-shadow:0 8px 24px rgba(0,0,0,.12);
+      background-image:
+        radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size:18px 18px, 24px 24px;
+      background-position:0 0, 10px 10px;
+    }
+    h1{font-family:Merriweather, Georgia, serif;margin:0 0 8px 0;font-size:2.0rem;letter-spacing:.2px}
+    .sub{font-size:1rem;opacity:.95;margin-top:6px}
+    .badge{display:inline-block;background:var(--gold);color:#fff;padding:4px 10px;border-radius:999px;font-size:.85rem;margin-left:8px}
+
+    .card{
+      background:var(--cream);
+      border:2px solid #e6dcc1;
+      border-radius:18px;
+      padding:20px;
+      margin-top:22px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .grid{display:grid;gap:18px}
+    @media (min-width:820px){ .grid.cols-2{grid-template-columns:1.1fr .9fr;} }
+
+    .lead{font-size:1.05rem}
+    .small{font-size:.92rem}
+    .accent{color:var(--terracotta);font-weight:600}
+    .accent-2{color:var(--turquoise);font-weight:600}
+    .underline{ text-decoration: underline; }
+    .muted{opacity:.8}
+
+    img.hero{
+      width:100%;height:auto;border-radius:16px;
+      border:3px solid #e6dcc1; display:block; object-fit:cover;
+    }
+
+    ul{padding-left:22px;margin:.25rem 0}
+    ol{padding-left:22px;margin:.25rem 0}
+    li{margin:.25rem 0}
+
+    .chip{display:inline-block;border:1px solid #e2d8bb;padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;background:white}
+
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    a.button{
+      border:2px solid var(--terracotta); color:var(--terracotta);
+      text-decoration:none; padding:10px 14px; border-radius:12px; font-weight:600;
+      transition:all .15s ease-in-out; background:white;
+    }
+    a.button:hover{background:var(--terracotta); color:#fff}
+
+    footer{margin:26px 0 8px 0; text-align:center;font-size:.92rem}
+    .bar{height:3px;background:linear-gradient(90deg,var(--terracotta),var(--turquoise));border-radius:2px;margin:18px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Khaana — Management Team</h1>
+      <p class="sub">
+        Rustic, authentically Mexican hospitality — powered by a dual model:
+        <span class="badge">Restaurant + Food Truck</span>
+        <span class="badge">Mariachi Thu–Sat 7pm</span>
+      </p>
+    </header>
+
+    <div class="bar" aria-hidden="true"></div>
+
+    <section class="card grid cols-2">
+      <div>
+        <p class="lead">
+          Meet the leadership behind <strong>Khaana</strong>—a neighborhood cocina blending
+          <em>tradición</em> and smart operations. We run a <span class="accent">full-service restaurant</span>
+          in parallel with a <span class="accent-2 underline">mobile food truck</span> to reach festivals, campuses,
+          and late-night crowds, while our <strong><u>live Mariachi</u></strong> (Thu–Sat, after 7pm) turns dinner into a celebration.
+        </p>
+
+        <h2 class="accent" style="font-family:Merriweather, Georgia, serif;">Our Leadership Values (Unordered List)</h2>
+        <ul>
+          <li>Respect for recipes, regions, and the people who taught us.</li>
+          <li>Operational excellence and safety across kitchen, truck, and stage.</li>
+          <li>Community ties—local sourcing and pop-ups with neighborhood partners.</li>
+        </ul>
+
+        <h2 class="accent-2" style="font-family:Merriweather, Georgia, serif;">90-Day Priorities (Ordered List)</h2>
+        <ol>
+          <li>Scale food-truck weekday lunch route to 5 predictable stops.</li>
+          <li>Launch seasonal <em>antojitos</em> menu aligned with supply and prep capacity.</li>
+          <li>Formalize Mariachi schedule & setlist flow for table-turn balance post-7pm.</li>
+        </ol>
+
+        <div class="links">
+          <a class="button" href="REPLACE_WITH_SERVICES_PAGE_URL" target="rightFrame" title="Open Services inside the right frame">Our Services</a>
+          <a class="button" href="https://www.visitmexico.com/en" target="_blank" rel="noopener">Visit Mexico</a>
+          <a class="button" href="mailto:your.name@university.edu?subject=Khaana%20Management%20Team" title="Contact me">Contact me</a>
+        </div>
+      </div>
+
+      <aside>
+        <img class="hero" src="images/management-team.jpg" alt="Khaana leadership team at our rustic, terracotta-toned dining room" />
+        <div class="small muted" style="margin-top:8px">
+          Photo: leadership at the main restaurant before a Mariachi set.
+        </div>
+
+        <div style="margin-top:12px">
+          <span class="chip">Culinary Ops</span>
+          <span class="chip">Food Truck Logistics</span>
+          <span class="chip">Live Music Program</span>
+          <span class="chip">Safety & QA</span>
+        </div>
+
+        <p class="small" style="margin-top:12px">
+          Download the one-pager:
+          <a href="downloads/Khaana_Management_Bios.pdf" download>Management Bios (PDF)</a>
+        </p>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h2 style="font-family:Merriweather, Georgia, serif;">Leadership Roster</h2>
+      <div class="grid" style="gap:14px">
+        <div class="card" style="padding:14px;margin:0">
+          <strong>Chef de Cocina — Alma Reyes</strong><br>
+          <span class="small">Menu stewardship, prep systems, vendor alignment.</span>
+        </div>
+        <div class="card" style="padding:14px;margin:0">
+          <strong>GM & Truck Director — Diego Martínez</strong><br>
+          <span class="small">Food-truck routing, permitting, festival partnerships.</span>
+        </div>
+        <div class="card" style="padding:14px;margin:0">
+          <strong>Guest Experience Lead — Sofía Delgado</strong><br>
+          <span class="small">Mariachi program flow, table turns, feedback loops.</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="muted">
+      <div style="margin:8px 0">
+        <span class="small">© <span id="year"></span> Khaana. All rights reserved.</span>
+      </div>
+      <div class="small">Last Modified: <span id="lastMod"></span></div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      var lm = document.lastModified;
+      document.getElementById('lastMod').textContent = lm ? lm : new Date().toLocaleString();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
