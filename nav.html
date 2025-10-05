@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Khaana • Navigation</title>
+  <style>
+    :root{
+      --terracotta:#D95D39; --cactus:#2E7D32; --gold:#FFC107; --ink:#1b1b1b; --cream:#fff8ea;
+    }
+    html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    .wrap{height:100vh;display:flex;flex-direction:column}
+    header{background:linear-gradient(90deg,var(--terracotta),var(--gold));
+            color:#000;padding:.85rem .8rem;font-weight:700}
+    h1{font-size:1.05rem;margin:0}
+    nav{flex:1;overflow:auto;padding:.6rem .8rem}
+    a{display:block;padding:.4rem .5rem;margin:.15rem 0;border-radius:8px;text-decoration:none;
+       color:var(--terracotta);background:#fff;border:1px solid #f0e6d6}
+    a:hover{background:#fff6e1}
+    .group{font-size:.8rem;text-transform:uppercase;color:#555;margin:.8rem .2rem .4rem}
+    footer{padding:.5rem .8rem;border-top:2px dashed var(--terracotta);font-size:.85rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><h1>Khaana — Team 9</h1></header>
+    <nav>
+      <div class="group">Team pages</div>
+      <!-- Right frame initial/home -->
+      <a href="home.html" target="showframe">Team Home</a>
+
+      <!-- Your individual page (same repo) -->
+      <a href="/team9_project1/management.html" target="showframe">Management — Arman Hyder</a>
+
+      <!-- Add EACH teammate’s page below: use their GitHub Pages URLs and keep target="showframe" -->
+      <!-- Example placeholders — replace with the real links when teammates share their URLs -->
+      <!--
+      <a href="https://username1.github.io/repo1/page1.html" target="showframe">Menu — Teammate 1</a>
+      <a href="https://username2.github.io/repo2/page2.html" target="showframe">Locations — Teammate 2</a>
+      <a href="https://username3.github.io/repo3/page3.html" target="showframe">Contact — Teammate 3</a>
+      <a href="https://username4.github.io/repo4/page4.html" target="showframe">Frame — Teammate 4</a>
+      <a href="https://username5.github.io/repo5/page5.html" target="showframe">Nav — Teammate 5</a>
+      -->
+
+      <div class="group">Useful links</div>
+      <!-- External links should NOT replace your site; open in a new tab -->
+      <a href="https://www.purdue.edu" target="_blank" rel="noopener">Purdue University</a>
+    </nav>
+
+    <footer>
+      <div>Date last modified: <script>document.write(document.lastModified);</script></div>
+    </footer>
+  </div>
+</body>
+</html>
